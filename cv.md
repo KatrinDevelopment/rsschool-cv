@@ -1,4 +1,3 @@
-sschool-cv
 # Katrin Sakharova
 **Contacts:**
 - Location: Moscow, Russia
