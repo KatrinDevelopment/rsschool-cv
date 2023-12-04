@@ -1,3 +1,3 @@
 # rsschool-cv
 
-https://KatrinDevelopment.github.io/rsschool-cv/cv
+https://KatrinDevelopment.github.io/rsschool-cv/

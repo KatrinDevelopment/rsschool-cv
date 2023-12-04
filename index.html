@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="asserts/favicon.ico">
+  <title>cv</title>
+</head>
+<body>
+  <header class = "header">
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
+        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+        <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#code-example" class="nav-link">Code example</a></li>
+        <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+      </ul>
+    </nav>
+    <div class="conteiner">
+      <img src="./assets/img/avatar.jpg" alt="avatar">
+    </div>
+  </header>
+  <main class = "header">
+    <div class="conteiner">
+      <section class="section" id="profile">
+        <h1 class="section-title">Katrin Sakharova</h1>
+        <img src="./assets/img/avatar.jpg" alt="avatar">
+      </section>
+      <section class="section" id="contacts">
+        <h2 class="section-title">Contacts:</h2>
+        <ul>
+          <li>Location: Moscow, Russia</li>
+          <li>Telegram: @Katriyi</li>
+          <li>GitHub: KatrinDevelopment</li>
+        </ul>
+      </section>
+      <section class="section" id="summary">
+        <h2 class="section-title">Summary:</h2>
+        <p>I have a law degree and worked for many years as a corporate lawyer. 
+          One year ago I moved to the IT department and expand my backend and 
+          frontend stack.
+        </p>
+      </section>
+      <section class="section" id="skills">
+        <h2 class="section-title">Skills:</h2>
+        <ul>
+          <li>Python</li>
+          <li>Django</li>
+          <li>REST API</li>
+          <li>SQL</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+      <section class="section" id="code-example">
+        <h2 class="section-title">Code Example:</h2>
+        <span>def get_api_answer(
+          timestamp: int,
+       ) -> Dict[str, Union[List[Dict[str, str]], int]]:
+          """Makes a request to API."""
+          try:
+              response = requests.get(
+                  ENDPOINT,
+                  headers=HEADERS,
+                  params={
+                      'from_date': timestamp,
+                  },
+              )
+          except requests.exceptions.RequestException as error:
+              logger.error(
+                  EndpointException(),
+                  exc_info=True,
+              )
+              raise ConnectionError(error)
+        </span>
+      </section>
+      <section class="section" id="experience">
+        <h2 class="section-title">Experience:</h2>
+        <ul>
+          <li><b>Хpractice</b>, junior developer</li>
+          <li><b>Ceremonies Staging Agency</b>, lawyer</li>
+          <li><b>International company Nissan</b>, lawyer</li>
+        </ul>
+      </section>
+      <section class="section" id="education">
+        <h2 class="section-title">Education</h2>
+        <h3>Univesity:</h3>
+        <ul>
+          <li>Russian Academy of Justice, lawyer</li>
+          <li>Manchester University, cultural project manager</li>
+        </ul>
+        <h3>Projects:</h3>
+        <ul>
+          <li>Students exchange program(USA, Appleton)</li>
+          <li><a href="http://www.ilsa.org/about-jessup">Jessup moot court Competition(USA, Washington)</a></li>
+        </ul>
+      </section>
+      <section class="section" id="english">
+        <h2 class="section-title">English</h2>
+        <p>Upper-Intermediate (B2)</p>
+    </div>
+  </main>
+  <footer class = "header">
+    <div class="conteiner">
+      <nav>
+        <ul>
+          <img src="./assets/img/avatar.jpg" alt="avatar">
+          <li><a href="https://github.com/KatrinDevelopment" class="nav-link">Github Katrin Sakharova</a></li>
+          <li><a href="https://rs.school/js/" class="nav-link">Курс RS School</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
