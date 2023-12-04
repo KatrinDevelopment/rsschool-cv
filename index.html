@@ -7,6 +7,7 @@
   <title>cv</title>
 </head>
 <body>
+
   <header class = "header">
     <nav>
       <ul class="nav-list">
@@ -24,6 +25,7 @@
       <img src="./assets/img/avatar.jpg" alt="avatar">
     </div>
   </header>
+
   <main class = "header">
     <div class="conteiner">
 
@@ -43,10 +45,7 @@
 
       <section class="section" id="summary">
         <h2 class="section-title">Summary:</h2>
-        <p>I have a law degree and worked for many years as a corporate lawyer. 
-          One year ago I moved to the IT department and expand my backend and 
-          frontend stack.
-        </p>
+        <p>I have a law degree and worked for many years as a corporate lawyer.One year ago I moved to the IT department and expand my backend and frontend stack.</p>
       </section>
 
       <section class="section" id="skills">
@@ -64,7 +63,25 @@
 
       <section class="section" id="code-example">
         <h2 class="section-title">Code Example:</h2>
-        <span>print('Hello World');</span>
+        <span>def get_api_answer(
+          timestamp: int,
+       ) -> Dict[str, Union[List[Dict[str, str]], int]]:
+          """Makes a request to API."""
+          try:
+              response = requests.get(
+                  ENDPOINT,
+                  headers=HEADERS,
+                  params={
+                      'from_date': timestamp,
+                  },
+              )
+          except requests.exceptions.RequestException as error:
+              logger.error(
+                  EndpointException(),
+                  exc_info=True,
+              )
+              raise ConnectionError(error)
+        </span>
       </section>
 
       <section class="section" id="experience">
